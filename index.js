@@ -35,8 +35,14 @@
 
 // console.log(today)
 
-const moment = require('moment')
+// const moment = require('moment')
 
-// console.log(moment().format("MMM Do YYYY"))
+// // console.log(moment().format("MMM Do YYYY"))
 
-console.log(moment("08161996", "MMDDYYYY").format('dddd [the] Do [of] MMMM [in the year] YYYY'))
+// console.log(moment("08161996", "MMDDYYYY").format('dddd [the] Do [of] MMMM [in the year] YYYY'))
+
+const emptyTrash = require('empty-trash');
+
+(async () => {
+	await emptyTrash();
+})();
